@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  body {
+    background-color: #191825;
+    color: #ffa3fd;
+  }
+
+  header {
+    background-color: #23105a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+  }
+  .menuFix {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #23105a; /* Cor de fundo do menu */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para um efeito de elevação */
+    z-index: 1000; /* Z-index para garantir que o menu fixo esteja acima de outros elementos */
+}
+
+  header nav a {
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+  }
+
+  #inicio {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    /* topo, direita, baixo, esquerda */
+    padding: 24px 80px 128px 80px;
+    position: relative;
+  }
+
+  h1,
+  h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  /* p{
+      line-height: 150%;
+      margin-bottom: 32px;
+  } */
+  .idiomas{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+  }
+  .idioma-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .idiomas img{
+    padding: 14px;
+    display: block;
+    border-radius: 50%;
+  }
+  .imagem{
+    cursor: pointer;
+  }
+  .blocoSM{
+    padding: 16px;
+    color: white;
+    background-color: #23105a;
+    border-radius: 40px;
+    text-align: center;
+
+  }
+  .mHabilidades h1{
+    padding: 16px;
+    color: white;
+    background-color: #23105a;
+    border-radius: 40px;
+    text-align: center;
+
+  }
+  .mHabilidades h2{
+    padding: 24px 16px;
+  }
+  .paragrafo {
+    line-height: 200%;
+    margin-bottom: 32px;
+  }
+  .absolute {
+    position: absolute;
+    bottom: 0;
+    top: 65%;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+  }
+
+  #projetos {
+    padding: 64px 80px;
+    display: block;
+    flex-direction: column;
+  }
+  
+  #projetos .projeto-container {
+    font-size: 24px;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  #projetos img {
+    border-radius: 10%;
+    margin-right: 20px;
+  }
+  
+  #projetos p {
+    margin: 0;
+  }
+  
+  .projeto h1{
+    padding: 16px;
+    color: white;
+    background-color: #23105a;
+    border-radius: 40px;
+    text-align: center;
+  }
+  .paragrafoSobreMim{
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 32px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    min-width: 400px;
+
+  }
+  #habilidades {
+    align-items: center;
+    padding: 64px 80px;
+  }
+
+  #clinica li {
+    margin-bottom: 16px;
+    margin-left: 32px;
+  }
+  #sobreMim {
+    padding: 64px 80px;
+    text-align: center;
+  }
+  #sobreMim .paragrafo {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  #duvida {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px;
+  }
+  .duvida {
+    position: relative;
+  }
+  .duvida h3 {
+    border: 2px solid #865dff;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+  }
+  .duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+  }
+  .duvida .paragrafo {
+    border-right: 1px solid #865dff;
+    border-bottom: 1px solid #865dff;
+    border-left: 1px solid #865dff;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s;
+  }
+  .duvida.ativa .paragrafo{
+    height: fit-content;
+    opacity: 1;
+    padding: 24px
+
+  }
+  footer {
+    background-color: #23105a;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 64px 80px;
+  }
+  footer .titulo {
+    color: white;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  footer nav a {
+    color: #ffa3fd;
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+    max-width: 350px;
+  }
+
+  footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+  }
+
+  footer p a {
+    color: rgb(170, 167, 167);
+    text-underline-offset: 4px;
+  }
+  #copyrigth {
+    background-color: #263138;
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+  }
+  .copy {
+    background-color: #263138;
+    color: #865dff;
+    text-align: center;
+  }
